@@ -7,7 +7,7 @@
 
 Clone the repository
 
-    git clone git@github.com:gothinkster/laravel-realworld-example-app.git
+    git clone git@github.com:gothinkster/te-software.git
     or dowload zip an extract in your www folder
 
 Switch to the repo folder
