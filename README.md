@@ -6,7 +6,7 @@
 Clone the repository
 
     git clone git@github.com:gothinkster/te-software.git
-    or dowload zip an extract in your www folder
+Or dowload zip an extract in your www folder
 
 Switch to the repo folder
 
