@@ -5,7 +5,7 @@
 
 Clone the repository
 
-    git clone git@github.com:gothinkster/te-software.git
+    git clone https://github.com/mframosg/te-software.git
 Or dowload zip an extract in your www folder
 
 Switch to the repo folder
