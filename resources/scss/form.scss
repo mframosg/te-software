@@ -1,4 +1,40 @@
-.form-container{
-    width: 40%;
-    margin: 0 auto;
+.tarjet{
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    & .title{
+        margin-top: 40px;
+        font-weight: 600;
+        font-size: 50px;
+    }
+
+    & .form-container{
+        padding-top: 30px;
+        display: flex;
+        flex-flow: column wrap;
+        width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+
+        & .div-container{
+            display: flex;
+            justify-content: space-around;
+            flex-flow: row nowrap;
+        }
+
+        & .buttons-container{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+            
+            & .button{
+                width: 80px;
+            }
+        }
+        
+    }
 }

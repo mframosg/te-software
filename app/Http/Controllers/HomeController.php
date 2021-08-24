@@ -23,12 +23,12 @@ class HomeController extends Controller
             'subTotal' => $request->subTotal,
             'vat' => $request->vat
         ]);
-        return back();
+        return back()->withSuccess('Succesfully added');
     }
 
     public function list()
     {
-        $items = Item::all();
+        $items = Item::all()->reverse();
         return view('home.list', compact('items'));
     }
 

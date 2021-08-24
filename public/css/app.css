@@ -1,4 +1,13 @@
-
+.navbar {
+  background-color: firebrick;
+  font-weight: 700;
+}
+.navbar a {
+  color: white;
+}
+.navbar a:hover {
+  color: lightgray;
+}
 .container-button {
   display: flex;
   flex-flow: column wrap;
@@ -6,7 +15,100 @@
   justify-content: center;
   margin-top: 5px;
 }
-.form-container {
+.tarjet {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.tarjet .title {
+  margin-top: 40px;
+  font-weight: 600;
+  font-size: 50px;
+}
+.tarjet .form-container {
+  padding-top: 30px;
+  display: flex;
+  flex-flow: column wrap;
+  width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.tarjet .form-container .div-container {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+}
+.tarjet .form-container .buttons-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+}
+.tarjet .form-container .buttons-container .button {
+  width: 80px;
+}
+.list-container {
   width: 40%;
   margin: 0 auto;
+  list-style-type: none;
+  padding-left: 0;
+}
+.list-container__item {
+  margin: 10px auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 0.4fr 0.8fr 0.4fr 0.8fr 0.6fr;
+  grid-template-rows: 40px;
+  align-items: center;
+}
+.list-container__item-id-text {
+  background-color: firebrick;
+  border: 1px solid firebrick;
+  color: white;
+  padding: 7px 10px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.list-container__item-id {
+  background-color: firebrick;
+  border: 1px solid firebrick;
+  color: white;
+  padding: 7px 10px;
+  text-align: center;
+}
+.list-container__item-subtotal-text {
+  border: 1px solid firebrick;
+  text-align: center;
+  color: firebrick;
+  padding: 7px 10px;
+  border-left: none;
+  border-right: none;
+}
+.list-container__item-subtotal {
+  border: 1px solid firebrick;
+  text-align: center;
+  color: firebrick;
+  padding: 7px 10px;
+  border-left: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.list-container__item a {
+  text-decoration: none;
+  color: inherit;
+}
+.list-container__info {
+  margin: 0 15px;
+  place-self: center;
+}
+.list-container__info img {
+  height: 32px;
+}
+.list-container__item:nth-child(1), .list-container__item:nth-child(2) {
+  font-weight: 700;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px -8px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
 }

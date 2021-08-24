@@ -1,0 +1,11 @@
+
+.navbar {
+    background-color: firebrick;
+    font-weight: 700;
+    a {
+        color: white;
+        &:hover {
+            color: lightgray;
+        }
+    }
+}

@@ -1,19 +1,15 @@
 @extends('layouts.layout')
 
 @section('content')
-    <ul>
-        @php
-            $i = 1;
-        @endphp
+    <ul class="list-container">
         @foreach ($items as $item)
-            @if ($i <= 2)
-                <li> <strong> <a href="{{ route('home.info', $item->id) }}"> {{ $item->id }} </a>{{ $item->quantity }} </strong></li>
-            @else
-                <li> <a href="{{ route('home.info', $item->id) }}"> {{ $item->id }} </a> {{ $item->quantity }} </li>
-            @endif
-            @php
-                $i++;
-            @endphp
+            <li class="list-container__item">
+                <div class="list-container__item-id-text">ID:</div>
+                <div class="list-container__item-id"> {{ $item->id }} </div>
+                <div class="list-container__item-subtotal-text">Subtotal:</div>
+                <div class="list-container__item-subtotal">{{ $item->subTotal }}</div>
+                <div class="list-container__info"><a href="{{ route('home.info', $item->id) }}"><img src="info.png" /></a></div>
+            </li>
         @endforeach
     </ul>
 @endsection

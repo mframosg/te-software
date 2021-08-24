@@ -15,3 +15,4 @@ mix.js('resources/js/app.js', 'public/js');
 mix.sass('resources/scss/app.scss', 'public/css/app.css')
     .sass('resources/scss/index.scss', 'public/css/app.css')
     .sass('resources/scss/form.scss', 'public/css/app.css')
+    .sass('resources/scss/list.scss', 'public/css/app.css')
